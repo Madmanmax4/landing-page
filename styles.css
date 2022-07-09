@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    background: tan;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    background: #331F11;
+    height: 50px;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .container ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a:hover {
+    color: gray;
+}
+
+.navbar .container ul li {
+    padding-left: 15px;
+}
+
+.header {
+    min-height: 400px;
+}
+
+.header h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.header img {
+    max-width: 500px;
+    margin: 10px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro {
+    min-width: 400px;
+}
+
+.cards {
+    background: #83512C;
+}
+
+.cards h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: -20px;
+    margin-top: 10px;
+}
+
+.cards .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card {
+    background: tan;
+    color: black;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 15px;
+    flex: 1;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+}
+
+.card:hover {
+    box-shadow: 6px 6px 13px #331F11;
+}
+
+.card h2 {
+    line-height: 1;
+}
+
+.quote .container {
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+}
+
+.author {
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.footer {
+    background: #331F11;
+    color: white;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+@media(max-width:800px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 15px;
+        text-align: center;
+    }
+}
+
+@media(max-width:900px) {
+    .cards .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 15px;
+    }
+}
